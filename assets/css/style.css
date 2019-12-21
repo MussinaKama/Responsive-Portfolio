@@ -56,6 +56,7 @@ h2, h3 {
     color:turquoise;
     background: aqua;
     border-bottom: 2px solid;
+    max-width: 100%;
 }
 
 #logo {
@@ -120,13 +121,14 @@ footer {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  margin: 20px 10px 25px;
   overflow: auto;
+
 }
 
 .priority img {
   width: 100%;
-  border: 0 none;
+  border: 1px solid yellow;;
   opacity: 0.8;
 }
 
@@ -142,6 +144,7 @@ footer {
   text-align: center;
   background: aqua;
   border-bottom: 0;
+ 
 }
 
 .auth-image {
@@ -150,7 +153,8 @@ footer {
   height: 200px;
   margin-top: 10px;
   margin-right: 25px;
-  transform: rotate(270deg);
+  transform: rotate(360deg);
+  border-radius: 50%;
 }
 
 /*contact*/
@@ -196,11 +200,20 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
   .main-content {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
-  #nametab,  {
-    width: 100%;
+  #nametab {
+    width: 960px;
+    padding-right: 10px;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  nav {
+    margin-right: 10px;
   }
 
   footer {
@@ -212,11 +225,22 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
   .main-content {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
-  #nametab,  {
-    width: 100%;
+  #nametab {
+    width: 752px;
+  }
+
+  #logo {
+    margin-left: 8px;
+  }
+  nav {
+    margin-right: 8px;
+  }
+
+  .priority {
+    margin: 15px 15px 10px 30px;
   }
 
   footer {
@@ -227,13 +251,17 @@ input[type=submit] {
 @media screen and (max-width: 640px) {
   .main-content {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
-  #nametab,  {
-    width: 100%;
+  #nametab {
+    width: 624px;
   }
 
+  #logo {
+    margin-left: 8px;
+  }
+  
   footer {
     width: 100%;
   }
